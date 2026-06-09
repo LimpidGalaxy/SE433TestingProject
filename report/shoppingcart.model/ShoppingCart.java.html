@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ShoppingCart.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package shoppingcart.model;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.math.BigDecimal;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class ShoppingCart {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private List&#60;CartItem&#62; items;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public ShoppingCart() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.items = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void addItem(CartItem item) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        items.add(item);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean removeItem(String itemName) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_19'>4</a>
+<span>
+
+1. lambda$removeItem$0 : replaced boolean return with true for shoppingcart/model/ShoppingCart::lambda$removeItem$0 &rarr; KILLED<br/>
+
+2. removeItem : replaced boolean return with true for shoppingcart/model/ShoppingCart::removeItem &rarr; KILLED<br/>
+
+3. removeItem : replaced boolean return with false for shoppingcart/model/ShoppingCart::removeItem &rarr; KILLED<br/>
+
+4. lambda$removeItem$0 : replaced boolean return with false for shoppingcart/model/ShoppingCart::lambda$removeItem$0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return items.removeIf(item -&#62; item.getName().equalsIgnoreCase(itemName));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean updateQuantity(String itemName, int newQuantity) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (CartItem item : items) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_24'>1</a>
+<span>
+
+1. updateQuantity : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (item.getName().equalsIgnoreCase(itemName)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_25'>1</a>
+<span>
+
+1. updateQuantity : removed call to shoppingcart/model/CartItem::setQuantity &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                item.setQuantity(newQuantity);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_26'/>
+26
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_26'>1</a>
+<span>
+
+1. updateQuantity : replaced boolean return with false for shoppingcart/model/ShoppingCart::updateQuantity &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_29'>1</a>
+<span>
+
+1. updateQuantity : replaced boolean return with true for shoppingcart/model/ShoppingCart::updateQuantity &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;CartItem&#62; getItems() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_33'>1</a>
+<span>
+
+1. getItems : replaced return value with Collections.emptyList for shoppingcart/model/ShoppingCart::getItems &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new ArrayList&#60;&#62;(items); // defensive copy</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public BigDecimal getRawTotal() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_37'>1</a>
+<span>
+
+1. getRawTotal : replaced return value with null for shoppingcart/model/ShoppingCart::getRawTotal &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return items.stream().map(CartItem::getTotal).reduce(BigDecimal.ZERO, BigDecimal::add);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getItemCount() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_41'>1</a>
+<span>
+
+1. getItemCount : replaced int return with 0 for shoppingcart/model/ShoppingCart::getItemCount &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return items.size();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void clear() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_45'>1</a>
+<span>
+
+1. clear : removed call to java/util/List::clear &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        items.clear();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String toString() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_50'/>
+50
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_50'>1</a>
+<span>
+
+1. toString : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (items.isEmpty()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_51'>1</a>
+<span>
+
+1. toString : replaced return value with &#34;&#34; for shoppingcart/model/ShoppingCart::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#34;Shopping cart is empty.&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        StringBuilder sb = new StringBuilder(&#34;Shopping Cart Contents:\n&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (CartItem item : items) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            sb.append(&#34;- &#34;).append(item.toString()).append(&#34;\n&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_57'/>
+57
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_57'>1</a>
+<span>
+
+1. toString : replaced return value with &#34;&#34; for shoppingcart/model/ShoppingCart::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return sb.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@72437d8d_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$removeItem$0<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItemCount()]</span></span> replaced boolean return with true for shoppingcart/model/ShoppingCart::lambda$removeItem$0 &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>removeItem<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItemFromEmptyCart()]</span></span> replaced boolean return with true for shoppingcart/model/ShoppingCart::removeItem &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>removeItem<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItem()]</span></span> replaced boolean return with false for shoppingcart/model/ShoppingCart::removeItem &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>lambda$removeItem$0<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItem()]</span></span> replaced boolean return with false for shoppingcart/model/ShoppingCart::lambda$removeItem$0 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateQuantity<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantity()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateQuantity<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantity()]</span></span> removed call to shoppingcart/model/CartItem::setQuantity &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_26'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateQuantity<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantity()]</span></span> replaced boolean return with false for shoppingcart/model/ShoppingCart::updateQuantity &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateQuantity<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantityEmptyCart()]</span></span> replaced boolean return with true for shoppingcart/model/ShoppingCart::updateQuantity &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getItems<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItems()]</span></span> replaced return value with Collections.emptyList for shoppingcart/model/ShoppingCart::getItems &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getRawTotal<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetRawTotalEmpty()]</span></span> replaced return value with null for shoppingcart/model/ShoppingCart::getRawTotal &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getItemCount<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testAddMultipleItems()]</span></span> replaced int return with 0 for shoppingcart/model/ShoppingCart::getItemCount &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>clear<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testClear()]</span></span> removed call to java/util/List::clear &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_50'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringEmpty()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringEmpty()]</span></span> replaced return value with &#34;&#34; for shoppingcart/model/ShoppingCart::toString &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@72437d8d_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@72437d8d_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringWithMultipleItems()]</span></span> replaced return value with &#34;&#34; for shoppingcart/model/ShoppingCart::toString &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantity()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantityCaseInsensitive()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testUpdateQuantityValid()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testEditQuantityBoundaryOne()] (1 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainEditQuantity()] (2 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringEmpty()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCartContentsEmpty()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testCheckoutClearsCart()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantityEmptyCart()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testUpdateQuantityNotFound()] (1 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testUpdateQuantityNonExisting()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testEditQuantityItemNotFound()] (1 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringWithMultipleItems()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testToStringWithItems()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCartContentsWithItems()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainViewCartContents()] (2 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItem()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItemCount()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItemNotFound()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItemCaseInsensitive()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetRawTotalAfterRemoval()] (1 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetItemCountAfterRemove()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testRemoveItemNonExisting()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testRemoveItemExisting()] (1 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testRemoveItemSuccess()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainRemoveItem()] (2 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testConstructor()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItems()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItemsDefensiveCopy()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testClear()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testRemoveItemFromEmptyCart()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testRemoveItemEmptyCart()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testRemoveItemNotFound()] (1 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testClearEmptyCart()] (2 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testCheckoutEmptyCart()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testCheckoutExactOneDollar()] (1 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testCheckoutExactMaxTotal()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testCheckoutSuccess()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainInvalidMenuOption()] (1 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testScannerClosedAfterMain()] (1 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainInvalidShipping()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainInvalidStateRetry()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainAddItemAndCheckout()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainGetCurrentTotal()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testMainNextDayShipping()] (47 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetRawTotalEmpty()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetRawTotal()] (1 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCurrentTotalEmpty()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCurrentTotalNextDay()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCurrentTotalFreeShipping()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetCurrentTotalWithItems()] (0 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testGetCurrentTotalMethod()] (2 ms)</li><li>shoppingcart.cli.ShoppingCartAppTest.[engine:junit-jupiter]/[class:shoppingcart.cli.ShoppingCartAppTest]/[method:testCheckoutExceedsMaximum()] (1 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testGetItemCountEmpty()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testAddMultipleItems()] (0 ms)</li><li>shoppingcart.model.ShoppingCartTest.[engine:junit-jupiter]/[class:shoppingcart.model.ShoppingCartTest]/[method:testAddItem()] (1 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetItemCountInitial()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddItemInvalidQuantityNegative()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddItemInvalidQuantityZero()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddItemInvalidPriceZero()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddItemValid()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddItemInvalidPriceNegative()] (1 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testAddMultipleItems()] (0 ms)</li><li>shoppingcart.service.CartServiceTest.[engine:junit-jupiter]/[class:shoppingcart.service.CartServiceTest]/[method:testGetItemCountAfterAdd()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.20.0
+
+</body>
+</html>
